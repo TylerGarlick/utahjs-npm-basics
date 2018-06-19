@@ -1,0 +1,20 @@
+{
+  "name": "utahjs-npm-basics",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "author": "Tyler Garlick <tjgarlick@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node .",
+    "test": "npx ava",
+    "build": "npm run build:transpile",
+    "build:transpile": "npx babel src -d build --copy-files"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
